@@ -12,7 +12,8 @@ namespace Client
         public static WebSocket client;
         static void Main(string[] args)
         {
-            client = new WebSocket("ws://localhost:8080");
+            //client = new WebSocket("ws://localhost:8080");
+            client = new WebSocket("ws://25.74.30.162:8080");
             client.Connect();
             string s = Console.ReadLine();
             while(s!="0")
