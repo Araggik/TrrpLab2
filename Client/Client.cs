@@ -53,6 +53,7 @@ namespace Client
                 {
                     object[] arr = new object[13];
                     rdr.GetValues(arr);
+                    Console.WriteLine(arr);
                     Onerow row = new Onerow(arr);
                     var jsobj = JsonConvert.SerializeObject(row);
                     var bytes = Encoding.UTF8.GetBytes(jsobj);
